@@ -18,6 +18,7 @@
   },
   "main": "./dist/vue-modal.common.js",
   "dependencies": {
+    "@juno.dev/js-swiss-knife": "^0.0.1-beta.0",
     "@juno.dev/vue-plugin-helpers": "^0.0.1-beta.0",
     "core-js": "^3.1.2",
     "pug": "^2.0.3",

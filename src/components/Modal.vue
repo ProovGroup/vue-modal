@@ -11,15 +11,7 @@
 
 <script lang="ts">
 import { Component, Prop, Vue, Watch } from 'vue-property-decorator'
-
-// @TODO(damien) Move into separate package
-const removeElement = (el: any) => {
-  if (typeof el.remove !== 'undefined') {
-    el.remove()
-  } else if (typeof el.parentNode !== 'undefined') {
-    el.parentNode.removeChild(el)
-  }
-}
+import { removeElement } from '@juno.dev/js-swiss-knife'
 
 @Component
 export default class Modal extends Vue {
