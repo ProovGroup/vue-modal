@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import Modal from './Modal.vue'
+import ModalFixedWrapper from './ModalFixedWrapper'
 
 import { use, registerComponent, registerComponentOnPrototype } from '@juno.dev/vue-plugin-helpers'
 
@@ -42,5 +43,6 @@ export default Plugin
 
 export {
   Modal,
-  ModalProgrammatic
+  ModalProgrammatic,
+  ModalFixedWrapper
 }
