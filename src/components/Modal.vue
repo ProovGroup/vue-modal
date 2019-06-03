@@ -44,8 +44,8 @@ export default class Modal extends Vue {
   get cancelOptions() {
     return typeof this.canCancel === 'boolean'
       ? this.canCancel
-          ? ['escape', 'x', 'outside', 'button']
-          : []
+        ? ['escape', 'x', 'outside', 'button']
+        : []
       : this.canCancel
   }
 
@@ -105,35 +105,33 @@ export default class Modal extends Vue {
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped lang="scss">
+<style scoped lang="sass">
+  .modal-wrapper
+    position: fixed
+    top: 0
+    bottom: 0
+    right: 0
+    left: 0
+    display: none
+    align-items: center
+    justify-content: center
+    z-index: 50
 
-  .modal-wrapper {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 100;
-  }
+    &.is-active
+      display: flex
 
-  .modal-overlay {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    z-index: 100;
-    background-color: rgba(#3D4268, 0.3);
-  }
+  .modal-overlay
+    position: absolute
+    top: 0
+    bottom: 0
+    right: 0
+    left: 0
+    z-index: 100
+    background-color: rgba(#000, 0.8)
 
-  .modal-content {
-    z-index: 100;
-    max-height: 90vh;
-    overflow: auto;
-    position: relative;
-  }
+  .modal-content
+    z-index: 100
+    max-height: 90vh
+    overflow: auto
+    position: relative
 </style>
