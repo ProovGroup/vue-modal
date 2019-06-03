@@ -17,3 +17,7 @@ public
 .eslintrc
 .babelrc
 .gitignore
+.tsconfig.json
+tslint.json
+babel.config.js
+.postcssrc.js
