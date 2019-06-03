@@ -1,12 +1,7 @@
 {
   "name": "@juno.dev/vue-modal",
   "version": "0.0.1-beta.0",
-  "description": "Vue JS Modal Component",
-  "keywords": [
-    "modal",
-    "vue2"
-  ],
-  "author": "Damien Roche",
+  "description": "Vue-JS fork from Buefy Modal Component",
   "license": "MIT",
   "scripts": {
     "serve": "vue-cli-service serve",
